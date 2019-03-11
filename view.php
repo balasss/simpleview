@@ -13,7 +13,7 @@ include 'db.php';
 	$city = $db->get ("city", null, $cols);
 	if ($db->count > 0)
     foreach ($city as $city) { 
-			print_r ($city);
+			print_r (implode(" ",$city));
 		echo "</br>";
 		
     }
